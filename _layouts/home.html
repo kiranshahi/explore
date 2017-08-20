@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+  {{ content }}
+
+  <div class="panel-body">
+    {% for post in site.posts %}
+        <h2>
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </h2>
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <p>
+          <span class="post-meta">Published on <b>{{ post.date | date: date_format }}</b></span>
+          <span class="post-meta"> by <b>{{ post.author }}</b></span>
+        </p>
+        <p class="text-justify">{{ post.description }}</p>
+        <a class="btn btn-default" href="{{ post.url | relative_url }}" role="button">Read More ...</a>
+        <hr>
+    {% endfor %}
+  </div>
