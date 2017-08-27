@@ -39,8 +39,8 @@ layout: default
     
     {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
-    <li>
-      <span aria-hidden="true" class="active">{{ page }}</span>
+    <li class="active">
+      <span>{{ page }}</span>
     </li>
     {% elsif page == 1 %}
     <li>
