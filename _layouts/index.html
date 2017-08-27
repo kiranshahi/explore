@@ -24,18 +24,22 @@ layout: default
 {% if paginator.total_pages > 1 %}
 <nav aria-label="Page navigation">
   <ul class="pagination">
+
+    {% if paginator.previous_page %}
     <li>
-      {% if paginator.previous_page %}
       <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
         <span aria-hidden="true">&laquo;</span>
       </a>
-      {% else %}
-      <span aria-hidden="true">&laquo;</span>
-      {% endif %}
     </li>
+    {% else %}
+    <li class="disabled">
+      <span aria-hidden="true">&laquo;</span>
+    </li>
+    {% endif %}
+    
     {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
-    <li>
+    <li class="active">
       <span aria-hidden="true">{{ page }}</span>
     </li>
     {% elsif page == 1 %}
@@ -48,15 +52,17 @@ layout: default
     </li>
     {% endif %}
     {% endfor %}
+    {% if paginator.next_page %}
     <li>
-      {% if paginator.next_page %}
       <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
         <span aria-hidden="true">&raquo;</span>
       </a>
-      {% else %}
-      <span aria-hidden="true">&raquo;</span>
-      {% endif %}
     </li>
+    {% else %}
+    <li class="disabled">
+      <span aria-hidden="true">&raquo;</span>
+    </li>
+    {% endif %}
   </ul>
 </nav>
 {% endif %}
