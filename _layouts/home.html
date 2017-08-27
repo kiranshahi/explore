@@ -14,7 +14,7 @@ layout: default
     <span class="post-meta">Published on <b>{{ post.date | date: date_format }}</b></span>
     <span class="post-meta"> by <b>{{ post.author }}</b></span>
   </p>
-  <p class="text-justify">{{ post.description }}</p>
+  <p class="text-justify">{{ post.excerpt }}</p>
   <a class="btn btn-default" href="{{ post.url | relative_url }}" role="button">Read More ...</a>
   <hr>
   {% endfor %}
