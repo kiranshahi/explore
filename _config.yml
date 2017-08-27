@@ -23,7 +23,8 @@ twitter_username: itskirans
 github_username:  kiranshahi
 future: true
 paginate: 5
-paginate_path: posts/:num
+paginate_path: "/blog/page:num/"
+
 
 # Build settings
 markdown: kramdown
