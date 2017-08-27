@@ -17,7 +17,7 @@ title: Kiran's blog | Kiran Shahi is a .NET developer from Nepal
 email: kiran.shahi.np@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Welcome to kiran's blog. Kiran Shahi is a .NET guy. He is passionate about technology.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: itskirans
 github_username:  kiranshahi
