@@ -36,7 +36,7 @@ layout: default
     {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
     <li>
-      <em>{{ page }}</em>
+      {{ page }}
     </li>
     {% elsif page == 1 %}
     <li>
