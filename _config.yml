@@ -21,9 +21,9 @@ baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: itskirans
 github_username:  kiranshahi
-paginate_path: "blog/posts/:num"
 future: true
 paginate: 5
+paginate_path: blog/posts/:num
 
 # Build settings
 markdown: kramdown
