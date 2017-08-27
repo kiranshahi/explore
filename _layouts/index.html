@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<div class="panel-body">
+  {% for post in paginator.posts %}
+  <h2>
+    <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+  </h2>
+  {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+  <p>
+    <span class="post-meta">Published on <b>{{ post.date | date: date_format }}</b></span>
+    <span class="post-meta"> by <b>{{ post.author }}</b></span>
+  </p>
+  <p class="text-justify">{{ post.excerpt }}</p>
+  <a class="btn btn-default" href="{{ post.url | relative_url }}" role="button">Read More ...</a>
+  <hr>
+  {% endfor %}
+</div>
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+  {% else %}
+  <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+  <span class="next ">Next</span>
+  {% endif %}
+</div>
