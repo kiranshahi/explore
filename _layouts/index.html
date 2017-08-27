@@ -35,7 +35,9 @@ layout: default
     </li>
     {% for page in (1..paginator.total_pages) %}
     {% if page == paginator.page %}
-    <em>{{ page }}</em>
+    <li>
+      <em>{{ page }}</em>
+    </li>
     {% elsif page == 1 %}
     <li>
       <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
