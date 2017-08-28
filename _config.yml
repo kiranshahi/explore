@@ -24,7 +24,6 @@ github_username:  kiranshahi
 future: true
 
 paginate: 5
-permalink: /:categories/:year/:month/:day/:title.html
 
 
 # Build settings
