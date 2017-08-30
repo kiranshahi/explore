@@ -3,7 +3,6 @@ layout: post
 title:  "What is C# and .NET"
 date:   2017-06-08 07:04:22 +0545
 categories: C#, .NET
-author: "Kiran Shahi"
 description: "C# is an elegant and type-safe object-oriented programming language that enables developer to build a variety of secure and robust applications on the top of .NET Framework."
 ---
 
