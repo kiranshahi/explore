@@ -1,3 +1,12 @@
+---
+layout: post
+title:  "Do A Program Have Multiple Main Method"
+date:   2017-06-08 07:04:22 +0545
+categories: programming
+author: "Kiran Shahi"
+description: "Basically main method is the entry point into application. We can define multiple Main methods but we have to select a single main method when running our app. Need to specify which to use as the entry point for the application by our compiler."
+---
+
 Basically main method is the entry point into application. We can define multiple Main methods but we have to select a single main method when running our app. Need to specify which to use as the entry point for the application by our compiler.
 
 For example:

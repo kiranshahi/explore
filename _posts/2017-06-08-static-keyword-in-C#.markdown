@@ -1,3 +1,12 @@
+---
+layout: post
+title:  "Static Keyword In C#"
+date:   2017-06-08 07:04:22 +0545
+categories: programming
+author: "Kiran Shahi"
+description: "When a method is static then it can be invoked directly from the class level without creating an object. This is the reason for making a main() method static."
+---
+
 When a method is static then it can be invoked directly from the class level without creating an object. This is the reason for making a main() method static.
 
 Points for static keyword
