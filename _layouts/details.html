@@ -20,35 +20,17 @@
         <div class="panel panel-info">
           <div class="panel-heading">
             <h3 class="panel-title">Related Articles</h3>
-            {% unless page.category == null %}
-            {% capture pageCategory %}{{ page.category }}{% endcapture %}
-            {% unless site.categories[pageCategory].size == 1 %}
-            <div class="row related-posts">
-              <h2 class="text-center">More {{ page.category }} Posts!</h2>
-              <div class="medium-12 small-12 columns">
-                <ul class="list-group">
-                  {% for post in site.categories[pageCategory] limit:6 %}
-                  {% unless post.title == page.title %}
-
-                  <li class="list-group-item">
-                    <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">
-                      {{ post.title }}
-                    </a>
-                  </li>
-
-                  {% endunless %}
-                  {% endfor %}
-                </div>
-              </div>
-              {% endunless %}
-              {% endunless %}
-            </div>
+            {% for post in site.related_posts %}
+            <li><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+            {% endfor %}
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
-      {% include footer.html %}
+  {% include footer.html %}
 
-    </body>
+</body>
 
-    </html>
+</html>
