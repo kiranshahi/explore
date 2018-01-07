@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{ Jekyll theme for my blog.}
   spec.description   = "This theme is developed for my blog under MIT license. You can download and change the content of this theme."
-  spec.homepage      = "http://www.kirans.me"
+  spec.homepage      = "http://www.kirans.com.np"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README)}i) }
