@@ -4,7 +4,7 @@ Gem::Specification.new do |spec|
   spec.name          = "kiranshahi.github.io"
   spec.version       = "0.1.0"
   spec.authors       = ["Kiran Shahi"]
-  spec.email         = ["mail@kirans.com.np"]
+  spec.email         = ["kiran.shahi.np@gmail.com"]
 
   spec.summary       = %q{ Jekyll theme for my blog.}
   spec.description   = "This theme is developed for my blog under MIT license. You can download and change the content of this theme."
@@ -17,6 +17,6 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.1"
 
 
-  spec.add_development_dependency "bundler", "~> 1.12"
+  spec.add_development_dependency "bundler", "~>2.2.31"
   spec.add_development_dependency "rake", "~> 10.0"
 end
